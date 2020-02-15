@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Event</title>
+    <script src ="index.js"></script>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+
+<body>
+<fieldset>
+<form id="form">
+    <label>Event Type:</label> 
+    <select id="eventType" required>
+      <option value=""></option>
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+    </select>
+
+    <br><br>
+
+    <label>Event Title:</label> <input type = "text" id="eventTitle" required>
+
+    <br><br>
+
+    <label>Event Dates:</label> <input type = "date" id="eventDate1"> to <input type = "date" required id="eventDate2">
+
+    <br><br>
+
+    <label>Posting Date:</label> <input type = "date" required id="eventDate3">
+
+    <br><br>
+
+    <input type="checkbox">
+    <label>Is Registration Required?</label>
+    <br>
+    <input type="checkbox">
+    <label>Is this event associated with any Family Programs?</label>
+    <br>
+    <input type="checkbox">
+    <label>Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label>
+    <br>
+    <input type="checkbox">
+    <label>Is There a Point of Contact?</label>
+    <br>
+    <input type="checkbox">
+    <label>Is There a Hosting Command Point of Contact?</label>
+    <br><br>
+    
+    <center><input type = "submit" value = "Save" onclick ="display()"> <input type = "reset" value = "Cancel"></center>
+</form>
+</fieldset>    
+</body>
+</html>
